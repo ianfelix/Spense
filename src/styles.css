@@ -57,17 +57,46 @@ body {
 .main-header ul li a {
   padding: 0.8rem;
   transition: filter 0.2s;
-}
-
-.main-header ul li a:hover {
-  filter: opacity(0.7);
+  font-size: 1.2rem;
 }
 
 .main-header .login {
   display: flex;
   align-items: center;
-  gap: 1.5rem;
+  gap: 0.5rem;
 }
+
+.main-header .login a {
+  padding: 0.5rem;
+  transition: filter 0.2s;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.main-header ul li a:hover,
+.main-header .login a:hover {
+  filter: opacity(0.7);
+}
+
+.black-button {
+  background: var(--black);
+  color: var(--withe);
+  padding: 15px;
+  width: 128px;
+  border: none;
+  border-radius: 5px;
+  transition: filter 0.2s;
+}
+
+.main-header .login button:hover {
+  filter: brightness(0.8);
+}
+
+.main-header .login button:active {
+  position: relative;
+  top: 1px;
+}
+
 /* finish header */
 
 .wrapper {
@@ -91,12 +120,25 @@ body {
   color: var(--text-primary);
   margin-bottom: 10px;
 }
+.hero-container div p {
+  color: var(--text-secondary);
+  margin-bottom: 20px;
+  font-weight: 400;
+}
 
+.hero-container ul {
+  margin-bottom: 10px;
+}
+
+.hero-container ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 .hero-container ul li {
   display: flex;
-  align-items: center;
-  gap: 1rem;
-  margin-bottom: 0.3rem;
+  align-items: flex-start;
+  gap: 0.8rem;
 }
 
 .hero-container li img {
@@ -106,6 +148,13 @@ body {
 .hero-container li p {
   color: var(--text-secondary);
   font-weight: 500;
+}
+
+.hero-container input {
+  padding: 14px;
+  margin-right: 10px;
+  border: 1px solid var(--gray-400);
+  border-radius: 5px;
 }
 
 .image-hero img {
@@ -205,6 +254,11 @@ footer ul {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+}
+
+footer li span ~ p {
+  color: var(--gray-400);
+  margin-top: 10px;
 }
 
 footer li span ~ a {
