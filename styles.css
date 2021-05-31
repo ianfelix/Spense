@@ -114,7 +114,6 @@ body {
 
 .hero-container {
   display: flex;
-  flex: 1 1 260px;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
@@ -125,6 +124,7 @@ body {
 
 .hero-container div {
   margin-bottom: 20px;
+  flex: 1 1 300px;
 }
 
 .hero-container div h1 {
@@ -170,7 +170,7 @@ body {
 }
 
 .image-hero img {
-  max-width: 400px;
+  flex: 1 1 300px;
 }
 
 .container-wrapper {
@@ -215,7 +215,6 @@ body {
   margin-bottom: 15px;
   font-weight: 400;
   line-height: 1.5rem;
-  white-space: nowrap;
 }
 
 .content-text-phone a {
