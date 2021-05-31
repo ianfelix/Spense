@@ -36,7 +36,9 @@ body {
 
 .main-header {
   display: flex;
+  flex: 1;
   justify-content: space-between;
+  flex-wrap: wrap;
   align-items: center;
   max-width: 1480px;
   margin: 0 auto;
@@ -68,9 +70,14 @@ body {
 
 .main-header .login a {
   padding: 0.5rem;
+  flex-grow: 2;
   transition: filter 0.2s;
   font-size: 1.2rem;
   font-weight: 500;
+}
+
+.main-header .login button {
+  flex-grow: 2;
 }
 
 .main-header ul li a:hover,
@@ -107,12 +114,17 @@ body {
 
 .hero-container {
   display: flex;
+  flex: 1 1 260px;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
   max-width: 1480px;
   margin: 0 auto;
   padding: 0 1rem;
+}
+
+.hero-container div {
+  margin-bottom: 20px;
 }
 
 .hero-container div h1 {
@@ -169,17 +181,22 @@ body {
 
 .container-brands {
   display: flex;
+  flex-wrap: wrap;
+  flex: 1 1 260px;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 25px;
 }
 
 .container-brands img {
-  max-width: 110px;
+  max-width: 160px;
+  padding: 10px 0;
 }
 
 .container-phone {
   display: flex;
+  flex-wrap: wrap;
+  flex: 1 1 260px;
   align-items: center;
   justify-content: space-between;
   background: var(--background);
@@ -213,16 +230,19 @@ body {
 
 .container-editor {
   display: flex;
+  flex-wrap: wrap;
+  flex: 1;
+  align-items: center;
   justify-content: space-between;
 }
 
 .container-editor img {
-  max-height: 600px;
+  max-height: 500px;
 }
 
 .container-editor-text {
-  margin-top: 150px;
-  white-space: nowrap;
+  align-self: center;
+  margin-bottom: 10px;
 }
 
 .container-editor-text h1 {
@@ -252,13 +272,14 @@ footer {
 
 footer ul {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: flex-start;
 }
 
 footer li span ~ p {
   color: var(--gray-400);
-  margin-top: 10px;
+  margin: 10px 0;
 }
 
 footer li span ~ a {
